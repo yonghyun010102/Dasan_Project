@@ -1,4 +1,4 @@
-# DCSC: Detector-Gated Contextual Span Correction for Korean ASR Post-Editing
+# Leveraging Fine-grained Error Correction in Korean Speech Recognition for Consultation Services
 
 <p align="center">
   <strong>Engineering Applications of Artificial Intelligence</strong>
