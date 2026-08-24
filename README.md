@@ -27,11 +27,12 @@ Numbers and identifying information are masked (`***`, `OOO`).
 The dataset is **not distributed in this repository**. It is licensed
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (non-commercial research
 only), which differs from this repository's MIT code license, so it is published separately
-on the Hugging Face Hub. **Download it before running anything:**
+on the [Hugging Face Hub](https://huggingface.co/datasets/zgold5670/DasanCallDial).
+**Download it before running anything:**
 
 ```bash
 pip install -U huggingface_hub
-hf download <hub-user>/DasanCallDial --repo-type dataset \
+hf download zgold5670/DasanCallDial --repo-type dataset \
     --local-dir data/dasancalldial
 ```
 
