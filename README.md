@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/dcsc-pipeline.png" width="500" alt="DCSC inference pipeline">
+  <img src="assets/dcsc-pipeline.png" width="700" alt="DCSC inference pipeline">
 </p>
 
 DCSC is a text-only post-editing framework for Korean ASR transcripts in an **error-sparse**
