@@ -1,0 +1,28 @@
+# The DasanCallDial dataset is NOT distributed here. It is licensed CC BY-NC 4.0
+# and published on the Hugging Face Hub; download it into data/dasancalldial/.
+# See the "Dataset" section of README.md.
+data/dasancalldial/
+data/*.xlsx
+
+# generated from data/dasancalldial/ by scripts/prepare_data.py
+data/splits/
+runs/
+*.log
+
+# archived pre-release material (not part of the release)
+_ARCHIVE/
+CallCenterRuns/
+
+# model weights are distributed via the Hugging Face Hub
+checkpoints/
+*.safetensors
+*.bin
+
+# manuscript (not redistributed here)
+*.pdf
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/

@@ -1,0 +1,13 @@
+# Core (pinned to the versions used for the reported results)
+torch==2.4.1
+transformers==4.46.3
+datasets==3.1.0
+accelerate==1.0.1
+peft==0.13.2
+sentencepiece>=0.2.0
+
+# Data / metrics
+pandas>=2.0
+openpyxl>=3.1
+scikit-learn>=1.3
+numpy>=1.24
