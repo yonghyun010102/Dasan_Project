@@ -15,8 +15,9 @@ flagged utterance together with its **dialogue context** and emits **span-level*
 (`오류span -> 정정span [SEP] ...`, or `이상없음` for no error) instead of rewriting the sentence.
 Predicting edits and gating on detection are what keep already-correct utterances intact.
 
-This repository keeps the dataset and the method code. Splits, checkpoints and metrics are
-regenerated under `data/splits/` and `runs/`.
+This repository holds the method code only. The dataset is downloaded from the Hugging Face
+Hub (see below); splits, checkpoints and metrics are regenerated under `data/splits/` and
+`runs/`.
 
 ## Dataset
 
@@ -67,7 +68,7 @@ non-commercial terms.
 ## Repository layout
 
 ```text
-CallCenter_Revision/
+Dasan_Project/
 ├── dcsc/                   # edits, data, context, detector, correctors, pipeline, metrics, config
 ├── scripts/                # prepare_data, train_detector, train_corrector, evaluate, run_*.sh
 ├── data/dasancalldial/     # DasanCallDial; NOT in Git -- download from the Hub (see Dataset)
@@ -161,13 +162,15 @@ runs/
 `u → s → con_s → full`, and `scripts/aggregate_seeds.py` turns several runs into a
 mean ± std table.
 
-## Pre-trained models
+## Model weights
 
-Weights exceed GitHub's file-size limit, so they are not in this repository. Train them with
-the steps above, or point `--detector_dir` and `--corrector_dir` at a local snapshot of a
-published one. `scripts/upload_checkpoints.py` publishes a checkpoint to the Hub.
+**No trained weights are distributed.** Train them from the dataset with the steps above;
+`scripts/run_dcsc.sh <seed> <backbone> <gpu>` does all four in one go. Checkpoints land in
+`runs/` and are read back with `--detector_dir` and `--corrector_dir`, so nothing else is
+needed to reproduce the results.
 
-Weights trained on DasanCallDial inherit the dataset's CC BY-NC 4.0 non-commercial terms.
+Note that any weights you train on DasanCallDial inherit the dataset's CC BY-NC 4.0
+non-commercial terms.
 
 ## Verification and notes
 
