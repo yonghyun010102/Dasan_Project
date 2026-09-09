@@ -201,13 +201,19 @@ section of [LICENSE](LICENSE).
 ## Citation
 
 ```bibtex
-@article{jun2025dcsc,
-  title   = {Leveraging Fine-grained Error Correction in Korean Speech Recognition
-             for Consultation Services},
-  author  = {Jun, Yonghyun and Lee, Jimin and Chang, Hwan and Shin, Dongho and
-             Kim, Seolah and Lee, Hwanhee},
-  journal = {Engineering Applications of Artificial Intelligence},
-  year    = {2025}
+@article{JUN2026116038,
+title = {Leveraging fine-grained error correction in Korean speech recognition for consultation services},
+journal = {Engineering Applications of Artificial Intelligence},
+volume = {183},
+pages = {116038},
+year = {2026},
+issn = {0952-1976},
+doi = {https://doi.org/10.1016/j.engappai.2026.116038},
+url = {https://www.sciencedirect.com/science/article/pii/S0952197626023225},
+author = {Yonghyun Jun and Jimin Lee and Hwan Chang and Dongho Shin and Seolah Kim and Hwanhee Lee},
+keywords = {Speech-to-text, Data augmentation, Supervised fine-tuning, Pre-trained language models},
+abstract = {Automatic Speech Recognition (ASR) technology is fundamental to customer service automation and large-scale transcription. However, even advanced ASR models exhibit inevitable errors in complex real-world environments such as call center conversations. When privacy restrictions preclude audio access, error correction must rely on text-based post-editing. Existing text-only approaches face significant challenges in low-resource languages, mainly due to a critical scarcity of annotated corpora and tailored correction methodologies. For Korean, this resource gap is particularly pronounced, as existing resources are predominantly designed for ASR training rather than text-based error correction. To address this, we introduce DasanCallDial, the first large-scale Korean benchmark dataset specifically curated for dialogue-level ASR error correction. Derived from genuine call center interactions, it comprises 1974 dialogues with 115,460 utterances. Uniquely, it features a realistic error-sparse setting that accurately reflects high-performance modern Speech-to-Text (STT) models, distinguishing it from synthetic datasets. Leveraging this resource, we propose Detector-Gated Contextual Span Correction (DCSC), a text-only post-editing framework for error-sparse Korean speech recognition transcripts. DCSC combines an encoder-based detector that first performs token-level error detection, followed by a language model-based corrector trained to rectify fine-grained span-level errors. Additionally, we employ dialogue-level context augmentation to enable the model to leverage discourse history for disambiguation. By employing multi-level granularity, our method achieves state-of-the-art performance, effectively overcoming the limitations of general-purpose LLMs in low-resource settings. Additional analyses further characterize the learning dynamics, transferability, and robustness of DCSC. Overall, our contributions establish a vital dataset and a practical baseline poised to accelerate future research in Korean ASR post-editing.}
+}
 }
 ```
 
